@@ -49,6 +49,8 @@ if conf["auto update"]:
     with open("main.py", "r+") as f:
         if f.read() != gitcode:
             betterPrint("[COLOR_AQUAMARINE_1A]Found update! updating code...")
+            f.close()
+            f = open("main.py", "a")
             f.write(gitcode)
             betterPrint("[COLOR_AQUAMARINE_1A]Updated code! restart the sniper to use the newest version")
             os.system("pause")
